@@ -21,7 +21,7 @@ class EvaluationTaskStack(Stack):
         dualist= _alambda.PythonFunction(
             self,
             "Initiator",
-            entry="./lambda/",
+            entry="./lambdas/",
             runtime=_lambda.Runtime.PYTHON_3_9,
             index="initiator.py",
             handler="handle"
@@ -30,7 +30,7 @@ class EvaluationTaskStack(Stack):
         sentinel= _alambda.PythonFunction(
             self,
             "dnslocator",
-            entry="./lambda/",
+            entry="./lambdas/",
             runtime= _lambda.Runtime.PYTHON_3_9,
             index="Dnslocator.py",
             handler="handler"
